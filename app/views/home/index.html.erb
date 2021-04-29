@@ -1,0 +1,6 @@
+<h1> Form </h1>
+
+<%= form_for @link, remote: true do  |form| %>
+    <%= form.text_field :original_url %>
+    <%= form.submit %>
+    <% end %>
