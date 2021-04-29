@@ -5,7 +5,7 @@ RSpec.describe LinksController,  type: :controller do
     it "can shorten a link provided by a user" do
         
     url="https://www.favoritewebsite.com/articles/how-to-bake"
-    request.env["HTTP_ACCEPT"] = "tet/javascript"
+    request.env["HTTP_ACCEPT"] = "text/javascript"
 post :create, params: { link: { original_url: url}}
 link = assigns(:link)
 expect(link.original_url).to eq(url)

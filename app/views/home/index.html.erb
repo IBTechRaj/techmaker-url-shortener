@@ -6,12 +6,14 @@
 <%= form_for @link, remote: true do  |form| %>
     <%= form.text_field :original_url, class: "form-control",
     placeholder: "Enter URL to shorten" %>
-    <%= form.submit %>
+    <%= form.submit "Shorten", class: 'btn btn-primary mt-2' %>
     <% end %>
     </div>
-
+    <div class="card-body">
+    <h5 class='card-title'>Here is the shortened URL </h5>
     <div id="short-link">
 
+    </div>
     </div>
 
 </div>
