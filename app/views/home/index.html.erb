@@ -1,6 +1,22 @@
-<h1> Form </h1>
-
+<div  class="container">
+<div class="p-5">
+<div class="card">
+<div class="card-body">
+<h4 class='card-title'>Enter URL to shorten </h4>
 <%= form_for @link, remote: true do  |form| %>
-    <%= form.text_field :original_url %>
+    <%= form.text_field :original_url, class: "form-control",
+    place-holder: "Enter URL to shorten" %>
     <%= form.submit %>
     <% end %>
+    </div>
+
+    <div id="short-link">
+
+    </div>
+
+</div>
+</div>
+</div>
+
+
+
